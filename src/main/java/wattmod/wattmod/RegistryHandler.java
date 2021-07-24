@@ -17,9 +17,21 @@ public class RegistryHandler {
     }
 
     //register item
-    public static final RegistryObject<Item> CRINGE = ITEMS.register("cringeinite", () ->
+    public static final RegistryObject<Item> COPPER = ITEMS.register("copper", () ->
             new Item(
                     new Item.Properties().group(ItemGroup.MATERIALS)
+            )
+    );
+
+    public static final RegistryObject<Item> BRONZE = ITEMS.register("bronze", () ->
+            new Item(
+                    new Item.Properties().group(ItemGroup.MATERIALS)
+            )
+    );
+
+    public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword", () ->
+            new Item(
+                    new Item.Properties().group(ItemGroup.COMBAT)
             )
     );
 }
