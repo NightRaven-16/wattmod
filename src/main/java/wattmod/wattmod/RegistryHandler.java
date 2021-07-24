@@ -43,11 +43,6 @@ public class RegistryHandler {
             )
     );
 
-    public static final RegistryObject<Item> RAW_BRONZE = ITEMS.register("raw_bronze", () ->
-            new Item(
-                    new Item.Properties().group(ItemGroup.MATERIALS)
-            )
-    );
 
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", () ->
             new Item(
