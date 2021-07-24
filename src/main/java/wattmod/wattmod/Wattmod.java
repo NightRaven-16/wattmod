@@ -24,6 +24,7 @@ public class Wattmod {
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
+    public static final String MODID = "Wattmod";
 
     public Wattmod() {
         // Register the setup method for modloading
@@ -37,6 +38,8 @@ public class Wattmod {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        RegistryHandler.init();
     }
 
     private void setup(final FMLCommonSetupEvent event) {
