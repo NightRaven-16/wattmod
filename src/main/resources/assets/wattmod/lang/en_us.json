@@ -1,5 +1,6 @@
 {
   "item.wattmod.copper": "Copper",
-  "item.wattmod.bronze": "bronze",
-  "item.wattmod.bronze_sword": "bronze_sword"
+  "item.wattmod.bronze_sword": "bronze_sword",
+  "block.wattmod.bronze_ore": "bronze_ore",
+  "item.wattmod.bronze": "bronze_ingot"
 }
