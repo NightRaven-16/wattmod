@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "wattmod:block/bronze_block" }
+  }
+}

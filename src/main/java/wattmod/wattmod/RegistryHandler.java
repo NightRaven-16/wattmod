@@ -36,6 +36,18 @@ public class RegistryHandler {
             )
         );
 
+    public static final RegistryObject<Block> BRONZE_BLOCK = BLOCKS.register("bronze_block", () ->
+            new Block(
+                    Block.Properties
+                            .create(Material.IRON)
+                            .hardnessAndResistance(5.0f, 6.0f)
+                            .sound(SoundType.STONE)
+                            .harvestLevel(1)
+                            .harvestTool(ToolType.PICKAXE)
+
+            )
+    );
+
     //register item
     public static final RegistryObject<Item> COPPER = ITEMS.register("copper", () ->
             new Item(
@@ -59,6 +71,13 @@ public class RegistryHandler {
     public static final RegistryObject<Item> BRONZE_ORE_ITEM = ITEMS.register("bronze_ore", () ->
             new BlockItem(
                     BRONZE_ORE.get(),
+                    new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)
+            )
+    );
+
+    public static final RegistryObject<Item> BRONZE_BLOCK_ITEM = ITEMS.register("bronze_block", () ->
+            new BlockItem(
+                    BRONZE_BLOCK.get(),
                     new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)
             )
     );
