@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "wattmod:ichor_scrap"
+  },
+  "addition": {
+    "item": "wattmod:steel_ingot"
+  },
+  "result": {
+    "item": "wattmod:ichor_ingot"
+  }
+}

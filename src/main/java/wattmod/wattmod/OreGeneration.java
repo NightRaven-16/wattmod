@@ -14,8 +14,8 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 public class OreGeneration {
     public static void generateOres(final BiomeLoadingEvent event){
         //will make the ore only spawn in the overworld
-        if(!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))){
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, RegistryHandler.BRONZE_ORE.get().getDefaultState(), 5, 15, 40, 10);
+        if(event.getCategory().equals(Biome.Category.TAIGA)){
+            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, RegistryHandler.ICHOR_ORE.get().getDefaultState(), 3, 2, 40, 8);
         }
 
     }

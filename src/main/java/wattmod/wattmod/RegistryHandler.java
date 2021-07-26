@@ -24,7 +24,7 @@ public class RegistryHandler {
     }
 
     // register block
-    public static final RegistryObject<Block> BRONZE_ORE = BLOCKS.register("bronze_ore", () ->
+    public static final RegistryObject<Block> ICHOR_ORE = BLOCKS.register("ichor_ore", () ->
             new Block(
                     Block.Properties
                             .create(Material.IRON)
@@ -36,7 +36,7 @@ public class RegistryHandler {
             )
         );
 
-    public static final RegistryObject<Block> BRONZE_BLOCK = BLOCKS.register("bronze_block", () ->
+    public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register("steel_block", () ->
             new Block(
                     Block.Properties
                             .create(Material.IRON)
@@ -48,36 +48,36 @@ public class RegistryHandler {
             )
     );
 
-    //register item
-    public static final RegistryObject<Item> COPPER = ITEMS.register("copper", () ->
+    //register item\
+
+    public static final RegistryObject<Item> ICHOR_INGOT = ITEMS.register("ichor_ingot", () ->
             new Item(
                     new Item.Properties().group(ItemGroup.MATERIALS)
             )
     );
 
-
-    public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", () ->
+    public static final RegistryObject<Item> ICHOR_SCRAP = ITEMS.register("ichor_scrap", () ->
             new Item(
                     new Item.Properties().group(ItemGroup.MATERIALS)
             )
     );
 
-    public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword", () ->
+    public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () ->
             new Item(
                     new Item.Properties().group(ItemGroup.COMBAT)
             )
     );
 
-    public static final RegistryObject<Item> BRONZE_ORE_ITEM = ITEMS.register("bronze_ore", () ->
+    public static final RegistryObject<Item> ICHOR_ORE_ITEM = ITEMS.register("ichor_ore", () ->
             new BlockItem(
-                    BRONZE_ORE.get(),
+                    ICHOR_ORE.get(),
                     new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)
             )
     );
 
-    public static final RegistryObject<Item> BRONZE_BLOCK_ITEM = ITEMS.register("bronze_block", () ->
+    public static final RegistryObject<Item> STEEL_BLOCK_ITEM = ITEMS.register("steel_block", () ->
             new BlockItem(
-                    BRONZE_BLOCK.get(),
+                    STEEL_BLOCK.get(),
                     new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)
             )
     );

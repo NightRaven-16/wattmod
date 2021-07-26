@@ -1,9 +1,9 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "item": "wattmod:bronze_ore"
+    "item": "wattmod:ichor_ore"
   },
-  "result": "wattmod:bronze_ingot",
+  "result": "wattmod:ichor_scrap",
   "experience": 0.7,
   "cookingtime": 100
 }
